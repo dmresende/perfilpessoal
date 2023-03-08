@@ -35,7 +35,7 @@
 .cabecalho__menu__link {
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 
@@ -49,19 +49,19 @@
 }
 
 .apresentacao__conteudo {
-    width: 630px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__titulo {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
 .apresentacao__descricao {
-    font-size: 24;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -76,26 +76,23 @@
 .apresentacao__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
-
+    font-size: 1.5rem;
 }
 
-.apresentacao__links_link {
-    /* background-color: #22D4FD; */
+.apresentacao__links_navegacao {
     display: flex;
     justify-content: center;
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
-
 }
 
 .apresentacao__links_link:hover {
@@ -133,9 +130,8 @@ body {
     color: var(--cor-terciaria);
 }
 
-#imagePerfil {
-    width: 550px;
-    height: 550px;
+.apresentacao__imagePerfil {
+    width: 50%
 }
 
 .rodape {
@@ -144,6 +140,6 @@ body {
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
