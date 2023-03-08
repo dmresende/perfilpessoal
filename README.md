@@ -13,3 +13,12 @@ Para o ajuste dinamico da página é importante verificar a necessidade da subst
 
 ### Ajustes da propriedade width
 A propriedade width estava de forma estática e se fez necessária a mudaça para porcentagem para acompanhar a disposição dos elementos quando mudada o tamanho da tela.
+
+### Uso da 'propriedade' @media
+Posso usar como uma condição o que está entre () e depois apresento qual tag sofrerá a alteração
+
+@media (max-width: 1200px) {
+    .apresentacao {
+        flex-direction: column;
+    }
+}
