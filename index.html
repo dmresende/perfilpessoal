@@ -1,50 +1,129 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-br" data-theme="light">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação</title>
+    <title>Portfólio - Douglas Resende</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
-
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark container">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Douglas Resende</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                    <button id="theme-toggle" class="apresentacao__links_navegacao">
+                        <img src="./assets/theme-icon.svg" alt="Ícone de tema">
+                        Trocar Tema
+                    </button>
+                </div>
+            </div>
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__titulo">Eleve seu negócio digital com um desenvolvimento de qualidade
-                e <strong id="tecnologias">faça-o brilhar ainda mais!</strong> </h1>
-            <p class="apresentacao__descricao">
-                Olá! Meu nome é Douglas Resende e sou um desenvolvedor júnior com experiência em
-                <strong id="tecnologias">
-                    React Native, HTML, CSS, TypeScript, Angular e C#.
-                </strong>
-                Vivencia no desenvolvimento de sistemas de gestão CRM/ERP, buscando sempre oferecer
-                soluções personalizadas e eficientes para os meus clientes. Estou animado para contribuir com meus
-                conhecimentos e habilidades em seus projetos!
-            </p>
-            <div class="apresentacao__links">
-                <h2 class="apresentacao__subtitulo">Acesse minhas redes:</h2>
-                <a class="apresentacao__links_navegacao" href=" https://github.com/dmresende">
-                    <img src="./assets/githubV.svg" class="githubIcon">github</a>
-                <a class="apresentacao__links_navegacao" href="https://www.linkedin.com/in/douglasmresende/">
-                    <img src="./assets/linkedinV.svg" class="linkedinIcon">Linkedim</a>
-                <a class="apresentacao__links_navegacao" href="https://www.instagram.com/d.resende_/">
-                    <img src="./assets/instagramV.svg" class="instagramIcon">Instagram</a>
+
+    <main class="container mt-5">
+        <section id="home" class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="display-4">Olá, eu sou <span class="text-primary">Douglas Resende</span></h1>
+                <p class="lead">Desenvolvedor Full Stack apaixonado por criar soluções inovadoras.</p>
+                <div class="mt-4">
+                    <a href="#contato" class="btn btn-primary me-2">Entre em contato</a>
+                    <a href="#projetos" class="btn btn-outline-primary">Ver projetos</a>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img class="img-fluid rounded-circle" src="./assets/imagePerfil.jfif" alt="Foto de perfil de Douglas Resende">
             </div>
         </section>
-        <img class="apresentacao__imagePerfil" src="./assets/imagePerfilTESTE.png">
+
+        <section id="sobre" class="mt-5">
+            <h2 class="text-center mb-4">Sobre Mim</h2>
+            <p>
+                Sou desenvolvedor Full Stack com experiência em React, React Native, .NET e Windows Forms. Desde minha transição de carreira, tenho me dedicado a aprimorar minhas habilidades como desenvolvedor, com foco em ambientes cloud. Durante minha carreira, analisei, revisei e desenvolvi soluções para problemas em sistemas legados, incluindo a otimização de funcionalidades antigas e a implementação de novas soluções.
+            </p>
+        </section>
+
+        <section id="projetos" class="mt-5">
+            <h2 class="text-center mb-4">Meus Projetos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Heatmap+</h5>
+                            <p class="card-text">Projeto do programa Residência em TIC da Brisa. Exibe áreas quentes no mapa com densidade populacional.</p>
+                            <a href="https://github.com/dmresende/brisaEcombr" class="btn btn-primary">github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Password App</h5>
+                            <p class="card-text">App móvel em React Native para gerar senhas seguras e personalizáveis.</p>
+                            <a href="https://github.com/dmresende/password-app" class="btn btn-primary">github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Portifólio</h5>
+                            <p class="card-text">Portifólio desenvolvido para expor meus projetos e habilidades.</p>
+                            <a href="https://github.com/dmresende/portfolio" class="btn btn-primary">github</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="mt-5">
+            <h2 class="text-center mb-4">Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://github.com/seu-usuario" class="btn btn-outline-dark me-2">
+                            <img src="./assets/githubV.svg" alt="GitHub" width="24" height="24" class="me-2">
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/douglasmresende/" class="btn btn-outline-primary">
+                            <img src="./assets/linkedinV.svg" alt="LinkedIn" width="24" height="24" class="me-2">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer class="rodape">
-        <p>Desenvolvido por Douglas Resende</p>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2023 Douglas Resende. Todos os direitos reservados.</p>
     </footer>
 
-</body>
+    <button id="btnVoltarAoTopo" class="btn btn-primary btn-lg rounded-circle" style="position: fixed; bottom: 20px; right: 20px; display: none; width: 50px; height: 50px; padding: 0;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </button>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
 </html>

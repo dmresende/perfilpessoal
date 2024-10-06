@@ -13,6 +13,39 @@
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
+
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #22D4FD;
+    --secondary-color: #1cb8d9;
+    --button-text: #ffffff;
+    --card-bg: #f8f9fa;
+    --card-text: #000000;
+}
+
+[data-theme="dark"] {
+    --bg-color: #000000;
+    --text-color: #ffffff;
+    --primary-color: #22D4FD;
+    --secondary-color: #1cb8d9;
+    --button-text: #000000;
+    --card-bg: #333333;
+    --card-text: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Estilo específico para os cards de projetos */
+.card {
+    background-color: var(--card-bg);
+    color: var(--card-text);
+}
+
+.card-title, .card-text {
+    color: var(--card-text);
 }
 
 /* reset */
@@ -22,23 +55,20 @@
 }
 
 .cabecalho {
-    padding: 2% 0% 0% 15%;
-
+    padding: 2% 0 0 15%;
 }
 
 .cabecalho__menu {
-    font-family: var(--fonte-secundaria);
     display: flex;
     gap: 80px;
 }
 
 .cabecalho__menu__link {
-    color: var(--cor-terciaria);
-    font-family: var(--fonte-secundaria);
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 600;
+    color: #22D4FD;
     text-decoration: none;
-
 }
 
 .apresentacao {
@@ -56,35 +86,40 @@
     gap: 40px;
 }
 
-.apresentacao__titulo {
+.apresentacao__conteudo__titulo {
     font-size: 2.25rem;
-    font-family: var(--fonte-primaria);
+    font-family: 'Krona One', sans-serif;
 }
 
-.apresentacao__descricao {
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.apresentacao__conteudo__texto {
     font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .apresentacao__links {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 32px;
 }
 
-.apresentacao__subtitulo {
-    font-family: var(--fonte-primaria);
+.apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
 }
 
-.apresentacao__links_navegacao {
+.apresentacao__links__navegacao {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 16px;
-    border: 2px solid var(--cor-terciaria);
+    border: 2px solid #22D4FD;
     width: 50%;
     text-align: center;
     border-radius: 8px;
@@ -92,57 +127,118 @@
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);
+    color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+    transition: background-color 0.3s ease;
 }
 
-.apresentacao__links_link:hover {
-    background-color: var(--cor-hover);
+.apresentacao__links__navegacao:hover {
+    background-color: #272727;
 }
 
-.githubIcon {
-    width: 32px;
-    height: 32px;
-}
-
+.githubIcon,
 .linkedinIcon {
     width: 32px;
     height: 32px;
+    margin-right: 10px;
 }
 
-.instagramIcon {
-    width: 32px;
-    height: 32px;
-}
-
-body {
-    /* height: 100vh; */
-    box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-}
-
-#escopoPrincipal {
-    display: flex;
-    color: var(--cor-secundaria);
-}
-
-#tecnologias {
-    color: var(--cor-terciaria);
+.apresentacao__links__link:hover {
+    background-color: #272727;
 }
 
 .apresentacao__imagePerfil {
-    width: 50%
+    width: 50%;
+    max-width: 400px;
+    border-radius: 50%; /* Arredondamento mais suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.apresentacao__imagePerfil:hover {
+    box-shadow: 0 0 30px rgba(34, 212, 253, 0.5); /* Sombra mais intensa no hover */
 }
 
 .rodape {
+    color: #000000;
+    background-color: #22D4FD;
     padding: 24px;
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
     text-align: center;
-    font-family: var(--fonte-secundaria);
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.navbar-brand {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Krona One', sans-serif;
+}
+
+.text-primary {
+    color: #22D4FD !important;
+}
+
+.btn-primary {
+    background-color: #22D4FD;
+    border-color: #22D4FD;
+}
+
+.btn-primary:hover {
+    background-color: #1cb8d9;
+    border-color: #1cb8d9;
+}
+
+.btn-outline-primary {
+    color: #22D4FD;
+    border-color: #22D4FD;
+}
+
+.btn-outline-primary:hover {
+    background-color: #22D4FD;
+    border-color: #22D4FD;
+}
+
+#home {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.img-fluid {
+    max-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#projetos .card {
+    transition: transform 0.3s ease;
+}
+
+#projetos .card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    #home {
+        text-align: center;
+    }
+
+    #home .col-md-6:first-child {
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -163,4 +259,144 @@ body {
         width: auto;
     }
 
+    .apresentacao__imagePerfil {
+        width: 60%;
+        max-width: 350px;
+    }
+
+    .apresentacao__links__navegacao {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho__menu {
+        gap: 10px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.8rem;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__links__navegacao {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__links__navegacao img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .githubIcon,
+    .linkedinIcon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho__menu__link {
+        font-size: 1rem;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.5rem;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1rem;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__links__navegacao {
+        font-size: 1rem;
+        padding: 15px 0;
+    }
+
+    .apresentacao__links__navegacao img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .rodape {
+        font-size: 1rem;
+    }
+
+    .githubIcon,
+    .linkedinIcon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+#sobre, #projetos {
+    margin-top: 100px;
+    padding-top: 50px;
+    border-top: 1px solid #e0e0e0;  /* Adiciona uma linha divisória sutil */
+}
+
+.apresentacao__links_navegacao,
+#theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: var(--primary-color);
+    color: var(--button-text);
+    border: 2px solid var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.apresentacao__links_navegacao:hover,
+#theme-toggle:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.apresentacao__links_navegacao img,
+#theme-toggle img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 991px) {
+    #theme-toggle {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+    opacity: 0.7;
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    opacity: 1;
 }

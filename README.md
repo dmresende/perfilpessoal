@@ -1,24 +1,41 @@
+# Portfólio de Douglas Resende
 
+## Descrição do Projeto
 
-### A propriedade root
-Pode ser usada para definir variáveis para que havendo uma mudança, que possamos apenas alterar as variáveis ao invez de passar por todo o código
-:root {
-    //nome da variavel | valor
-    --fonte-primaria: 'Krona One', sans-serif;
-}
+Este é o meu portfólio pessoal, desenvolvido para apresentar meus projetos e habilidades como desenvolvedor Full Stack. O site foi construído utilizando HTML, CSS e JavaScript, com foco em responsividade e acessibilidade.
 
-### Aplicação da propriedade rem
-Para o ajuste dinamico da página é importante verificar a necessidade da substituição da unidade de medida da propriedade font-size, como px para rem. Dessa forma a alteração das preferências de aparência do navegador também acompanharam nossa pagina.
+## Características Principais
 
+- Design responsivo que se adapta a diferentes tamanhos de tela
+- Modo claro/escuro alternável para melhor experiência do usuário
+- Seções para apresentação pessoal, projetos e informações de contato
+- Integração com redes sociais (GitHub, LinkedIn)
+- Botão "Voltar ao Topo" para fácil navegação
 
-### Ajustes da propriedade width
-A propriedade width estava de forma estática e se fez necessária a mudaça para porcentagem para acompanhar a disposição dos elementos quando mudada o tamanho da tela.
+## Tecnologias Utilizadas
 
-### Uso da 'propriedade' @media
-Posso usar como uma condição o que está entre () e depois apresento qual tag sofrerá a alteração
+- HTML5
+- CSS3 (com variáveis CSS para temas)
+- JavaScript (ES6+)
+- Bootstrap 5 (para componentes responsivos)
 
-@media (max-width: 1200px) {
-    .apresentacao {
-        flex-direction: column;
-    }
-}
+## Como Visualizar
+
+1. Clone este repositório
+2. Abra o arquivo `index.html` em seu navegador
+
+Ou acesse [URL do seu site hospedado] para ver o portfólio online.
+
+## Projetos Destacados
+
+- Heatmap+: Projeto do programa Residência em TIC da Brisa, exibindo áreas quentes no mapa com densidade populacional.
+- Password App: Aplicativo móvel desenvolvido em React Native para gerar senhas seguras e personalizáveis.
+
+## Contato
+
+- GitHub: [seu-usuario-github]
+- LinkedIn: [douglasmresende]
+
+---
+
+Desenvolvido por Douglas Resende © 2023
