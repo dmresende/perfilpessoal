@@ -1,34 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = themeToggle.querySelector('i');
     const htmlElement = document.documentElement;
-    const btnVoltarAoTopo = document.getElementById('btnVoltarAoTopo');
 
     // Função para trocar o tema
     function toggleTheme() {
         if (htmlElement.getAttribute('data-theme') === 'light') {
             htmlElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
-            if (themeToggle) themeToggle.textContent = 'Tema Claro';
+            themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
         } else {
             htmlElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
-            if (themeToggle) themeToggle.textContent = 'Tema Escuro';
+            themeIcon.classList.replace('bi-sun-fill', 'bi-moon-stars-fill');
         }
     }
 
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
         htmlElement.setAttribute('data-theme', savedTheme);
-        if (themeToggle) {
-            themeToggle.textContent = savedTheme === 'light' ? 'Tema Escuro' : 'Tema Claro';
+        if (savedTheme === 'dark') {
+            themeIcon.classList.replace('bi-moon-stars-fill', 'bi-sun-fill');
         }
     }
 
-    if (themeToggle) 
-        themeToggle.addEventListener('click', toggleTheme);
-     else 
-        console.warn('Botão de troca de tema não encontrado');
-    
+    themeToggle.addEventListener('click', toggleTheme);
 
     if (btnVoltarAoTopo) {
         window.onscroll = function() {
