@@ -33,8 +33,8 @@ Ou acesse [URL do seu site hospedado] para ver o portfólio online.
 
 ## Contato
 
-- GitHub: [seu-usuario-github]
-- LinkedIn: [douglasmresende]
+- GitHub: [dmresende](https://github.com/dmresende)
+- LinkedIn: [douglasmresende](https://www.linkedin.com/in/douglasmresende/)
 
 ---
 
